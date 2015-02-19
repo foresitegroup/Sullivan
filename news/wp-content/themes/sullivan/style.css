@@ -1,0 +1,280 @@
+/*
+ Theme Name:   Sullivan Metals
+ Theme URI:    http://thesullivancorp.com/news/
+ Description:  Sullivan Metals Theme
+ Author:       Remedi Creative
+ Author URI:   http://remedicreative.com
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+
+/*@import url("../twentyfourteen/style.css");*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+#secondary, .byline {
+  display: none;
+}
+
+.entry-content {
+  padding-bottom: 15px;
+}
+
+H1 {
+  clear: both;
+}
+
+H1.entry-title {
+  margin-bottom: 2px;
+}
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+  max-width: 100%;
+}
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto;
+}
+
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Make sure embeds and iframes fit their containers */
+
+embed,
+iframe,
+object,
+video {
+  margin-bottom: 24px;
+  max-width: 100%;
+}
+
+p > embed,
+p > iframe,
+p > object,
+span > embed,
+span > iframe,
+span > object {
+  margin-bottom: 0;
+}
+
+/* Alignment */
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote.alignleft,
+figure.wp-caption.alignleft,
+img.alignleft {
+  margin: 7px 24px 7px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 7px 14px 7px 0;
+}
+
+blockquote.alignright,
+figure.wp-caption.alignright,
+img.alignright {
+  margin: 7px 0 7px 24px;
+}
+
+.wp-caption.alignright {
+  margin: 7px 0 7px 14px;
+}
+
+blockquote.aligncenter,
+img.aligncenter,
+.wp-caption.aligncenter {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.site-content blockquote.alignleft,
+.site-content blockquote.alignright {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 17px;
+  width: 50%;
+}
+
+.site-content blockquote.alignleft p,
+.site-content blockquote.alignright p {
+  margin-bottom: 17px;
+}
+
+.wp-caption {
+  margin-bottom: 24px;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
+}
+
+.wp-caption {
+  color: #767676;
+}
+
+.wp-caption-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 9px 0;
+}
+
+div.wp-caption .wp-caption-text {
+  padding-right: 10px;
+}
+
+div.wp-caption.alignright img[class*="wp-image-"],
+div.wp-caption.alignright .wp-caption-text {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.wp-smiley {
+  border: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Separators */
+
+.site-content span + .entry-date:before,
+.full-size-link:before,
+.parent-post-link:before,
+span + .byline:before,
+span + .comments-link:before,
+span + .edit-link:before,
+.widget_twentyfourteen_ephemera .entry-title:after {
+  content: "\0020\007c\0020";
+}
+
+/**
+ * 6.7 Post/Image/Paging Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.nav-links {
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  -ms-hyphens:     auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  hyphens:         auto;
+  word-wrap: break-word;
+}
+
+.post-navigation,
+.image-navigation {
+  margin: 24px auto 48px;
+  max-width: 474px;
+  padding: 0 10px;
+}
+
+.post-navigation a,
+.image-navigation .previous-image,
+.image-navigation .next-image {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 11px 0 12px;
+  width: 100%;
+}
+
+.post-navigation .meta-nav {
+  color: #767676;
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.post-navigation a,
+.image-navigation a {
+  color: #2b2b2b;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7142857142;
+  text-transform: none;
+}
+
+.post-navigation a:hover,
+.image-navigation a:hover {
+  color: #41a62a;
+}
+
+/* Paging Navigation */
+
+.paging-navigation {
+  border-top: 5px solid #000;
+  margin: 48px 0;
+}
+
+.paging-navigation .loop-pagination {
+  margin-top: -5px;
+  text-align: center;
+}
+
+.paging-navigation .page-numbers {
+  border-top: 5px solid transparent;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 900;
+  margin-right: 1px;
+  padding: 7px 16px;
+  text-transform: uppercase;
+}
+
+.paging-navigation a {
+  color: #2b2b2b;
+}
+
+.paging-navigation .page-numbers.current {
+  border-top: 5px solid #24890d;
+}
+
+.paging-navigation a:hover {
+  border-top: 5px solid #41a62a;
+  color: #2b2b2b;
+}
